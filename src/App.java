@@ -1,5 +1,13 @@
 public class App {
-    public static void main(String[] args) throws Exception {
-        System.out.println("Hello世界");
+    static int num;
+    static void method(){
+        num++;
+    }
+    static void methodB(){
+        num++;
+    }
+    public static void main(String[] args){
+        method(); methodB();
+        System.out.println(num);
     }
 }
